@@ -1,0 +1,14 @@
+{
+  "name": "heart-beat-hospital",
+  "version": "1.0.0",
+  "description": "Heart Beat Hospital website with a simple Express backend for appointment requests.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.14"
+  }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment — Heart Beat Hospital</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">Heart</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <ul class="navbar">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#About">About</a></li>
+        <li><a href="index.html#Departments">Departments</a></li>
+        <li><a href="index.html#Doctors">Doctors</a></li>
+        <li><a href="appointment.html">Book Appointment</a></li>
+      </ul>
+    </header>
+
+    <section class="page-hero">
+      <p class="crumb"><a href="index.html">Home</a> / Book Appointment</p>
+      <h1>Book an Appointment</h1>
+      <p>Tell us a little about what you need — we'll confirm your slot by email or phone.</p>
+    </section>
+
+    <section class="appointment-wrap">
+      <div class="appointment-info">
+        <h3>Visit us</h3>
+        <div class="info-row"><i class='bx bx-map'></i><span>24 West Street, Colombo, Maharagama</span></div>
+        <div class="info-row"><i class='bx bx-phone'></i><span>+94 87 498 5733</span></div>
+        <div class="info-row"><i class='bx bx-envelope'></i><span>heartbeat@gmail.com</span></div>
+        <div class="info-row"><i class='bx bx-time-five'></i><span>Mon–Sat, 8:00 AM – 6:00 PM</span></div>
+        <p>For medical emergencies, please call our 24/7 emergency line directly instead of using
+          this form — appointment requests are reviewed during working hours.</p>
+      </div>
+
+      <form class="appointment-form" id="appointment-form">
+        <div class="form-group">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group full">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="department">Department</label>
+          <select id="department" name="department" required>
+            <option value="">Select a department</option>
+            <option>Dental Clinic</option>
+            <option>Eye Care Center</option>
+            <option>Fertility Center</option>
+            <option>Neuro Center</option>
+            <option>Physio Center</option>
+            <option>Heart Center</option>
+            <option>Pediatric Center</option>
+            <option>General Medicine</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="doctor">Preferred doctor (optional)</label>
+          <select id="doctor" name="doctor">
+            <option value="">No preference</option>
+            <option>Dr. Amara Silva</option>
+            <option>Dr. Rajiv Perera</option>
+            <option>Dr. Ishara Fernando</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Preferred date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Preferred time</label>
+          <input type="time" id="time" name="time">
+        </div>
+        <div class="form-group full">
+          <label for="message">Anything we should know?</label>
+          <textarea id="message" name="message" placeholder="Briefly describe your symptoms or reason for the visit"></textarea>
+        </div>
+        <div class="form-message" id="form-message"></div>
+        <button type="submit" class="submit-btn" id="submit-btn">Request appointment</button>
+      </form>
+    </section>
+
+    <section class="contact" id="Contact">
+      <div class="footer">
+        <div class="main">
+          <div class="list">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html#About">About Us</a></li>
+              <li><a href="appointment.html">Book Appointment</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+          <div class="list">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Laboratory Services</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+          <div class="list">
+            <h4>Contact Info</h4>
+            <ul>
+              <li><a href="#">24 west street</a></li>
+              <li><a href="#">Colombo, Maharagama</a></li>
+              <li><a href="tel:+94874985733">+94 87 498 5733</a></li>
+              <li><a href="mailto:heartbeat@gmail.com">heartbeat@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="list">
+            <h4>Connect</h4>
+            <div class="social">
+              <a href="#"><i class='bx bxl-facebook'></i></a>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+              <a href="#"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="end-text"><p>Copyright @2024 All rights reserved | Made with love by Naveena</p></div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="appointment.js"></script>
+  </body>
+</html>
