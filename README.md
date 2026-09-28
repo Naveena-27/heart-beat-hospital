@@ -3,6 +3,8 @@
 A multi-page hospital website with a small Node.js/Express backend that
 handles appointment requests.
 
+![Hospital Demo](./hospital.gif)
+
 ## Pages
 
 - `public/index.html` — home page (About, Departments, Doctors overview)
